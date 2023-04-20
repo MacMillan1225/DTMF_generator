@@ -1,4 +1,4 @@
-function [output] = waveform_generator(Amplitude,frequency,T_s,method)
+function [output, t] = waveform_generator(Amplitude,frequency,T_s,method)
 %WAVEFORM_GENERATOR 生成波形
 %   method0：内建，1：查表，2：数字振荡器
     if(~exist("method",'var'))
